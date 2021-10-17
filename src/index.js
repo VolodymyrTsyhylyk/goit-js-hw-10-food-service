@@ -11,10 +11,15 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
+
 const bodyRef = document.querySelector('body');
 const themeToggleRef = document.querySelector('#theme-switch-toggle');
 
 themeToggleRef.addEventListener('change', onClickToggle);
+
+// if (localStorage.getItem('theme') === 'dark'){
+//   bodyRef.classList.toggle(`${Theme.DARK}`);
+// }
 
 loadTheme();
 
